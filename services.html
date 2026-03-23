@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing — The Climate Doctor | Canberra ACT</title>
+  <meta name="description" content="Air conditioning installation, heating systems, repairs and maintenance services in Canberra. Licensed Fujitsu Agent. Lifetime installation guarantee. Get a free quote.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0C4A6E',
+            'primary-light': '#0369A1',
+            secondary: '#DC2626',
+            'secondary-light': '#EF4444',
+            accent: '#0891B2',
+            warm: '#F97316',
+            'warm-light': '#FB923C',
+            'bg-main': '#F8FAFC',
+            'bg-alt': '#F0F9FF',
+            surface: '#FFFFFF',
+            'text-main': '#0F172A',
+            'text-light': '#64748B',
+          },
+          fontFamily: {
+            heading: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0F172A; background-color: #F8FAFC; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-white px-4 py-2 rounded z-50">Skip to content</a>
+
+  <!-- Top Bar -->
+  <div class="bg-primary text-white text-center py-2.5 text-sm font-semibold fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5">
+        <i data-lucide="award" class="w-4 h-4"></i>
+        Licensed Fujitsu Agent &bull; ARC Certified
+      </span>
+      <span class="hidden sm:inline">|</span>
+      <a href="tel:0262602044" class="underline font-bold hover:text-white/90">Call (02) 6260 2044</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed top-[42px] w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 bg-primary rounded-xl flex items-center justify-center group-hover:bg-primary-light transition-colors">
+            <i data-lucide="thermometer-snowflake" class="w-6 h-6 text-white"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold text-primary leading-tight">The Climate <span class="text-secondary">Doctor</span></span>
+            <span class="text-[10px] font-medium text-text-light tracking-wider uppercase leading-tight">Heating & Cooling Specialists</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-text-main font-medium hover:text-primary transition-colors">Home</a>
+          <a href="/services.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Services</a>
+          <a href="/contact.html" class="text-text-main font-medium hover:text-primary transition-colors">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0262602044" class="flex items-center gap-2 text-primary font-semibold">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            (02) 6260 2044
+          </a>
+          <a href="/contact.html" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors">Free Quote</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6 text-text-main"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="/" class="block py-2 text-text-main font-medium hover:text-primary">Home</a>
+        <a href="/services.html" class="block py-2 text-primary font-semibold">Services</a>
+        <a href="/contact.html" class="block py-2 text-text-main font-medium hover:text-primary">Contact</a>
+        <a href="tel:0262602044" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">Call (02) 6260 2044</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white pt-40 pb-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Our Services</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Complete air conditioning and heating solutions for residential and commercial properties across Canberra.</p>
+      </div>
+    </section>
+
+    <!-- Residential Installation -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start fade-up">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="home" class="w-6 h-6 text-accent"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-text-main">Residential Installation</h2>
+            </div>
+            <p class="text-text-light leading-relaxed">Canberra's weather can be unpredictable — from freezing winters to scorching summers. We help you be the master of your own environment with expert installation of all residential air conditioning and heating systems. Our team will advise you on the most suitable units for your home, ensuring comfort 24/7.</p>
+          </div>
+          <div class="lg:col-span-3 bg-bg-alt rounded-2xl p-6">
+            <h3 class="font-semibold text-text-main mb-4">What's Included</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Free on-site consultation and quote</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">System sizing and selection advice (split, ducted, multi-head)</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Full supply and installation</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Manufacturer warranty + our lifetime installation guarantee</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Post-install walkthrough and user training</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Access to hard-to-reach installation locations</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="max-w-6xl mx-auto border-gray-100">
+
+    <!-- Commercial Installation -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start fade-up">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="building-2" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-text-main">Commercial Installation</h2>
+            </div>
+            <p class="text-text-light leading-relaxed">No job is too big or too small. We install air conditioning systems into offices, retail shops, warehouses and any commercial property. Keep your team productive and your customers comfortable with an efficient climate control system tailored to your space.</p>
+          </div>
+          <div class="lg:col-span-3 bg-bg-alt rounded-2xl p-6">
+            <h3 class="font-semibold text-text-main mb-4">What's Included</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Site assessment and load calculation</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Custom system design for your workspace</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Ducted, cassette, and VRF/VRV systems</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Minimal disruption to business operations</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Ongoing commercial maintenance plans available</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="max-w-6xl mx-auto border-gray-100">
+
+    <!-- Repairs -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start fade-up">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="wrench" class="w-6 h-6 text-secondary"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-text-main">Repairs & Diagnostics</h2>
+            </div>
+            <p class="text-text-light leading-relaxed">AC not cooling? Heater blowing cold air? Strange noises or odours? Our technicians can diagnose and repair faults on all makes and models. We carry common parts on our vans for faster turnaround so you're back to comfort as quickly as possible.</p>
+          </div>
+          <div class="lg:col-span-3 bg-bg-alt rounded-2xl p-6">
+            <h3 class="font-semibold text-text-main mb-4">Common Repairs</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Refrigerant leaks and regas</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Compressor and fan motor replacement</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Electrical fault finding and repair</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Thermostat and control board issues</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Drainage and condensation problems</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">All makes and models — Fujitsu, Daikin, Mitsubishi, and more</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="max-w-6xl mx-auto border-gray-100">
+
+    <!-- Maintenance -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start fade-up">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-warm/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="clipboard-check" class="w-6 h-6 text-warm"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-text-main">Maintenance & Servicing</h2>
+            </div>
+            <p class="text-text-light leading-relaxed">Regular maintenance keeps your system running at peak efficiency, reduces energy bills, and prevents costly breakdowns. We recommend servicing your air conditioning at least once a year — ideally before summer and winter peaks.</p>
+          </div>
+          <div class="lg:col-span-3 bg-bg-alt rounded-2xl p-6">
+            <h3 class="font-semibold text-text-main mb-4">Service Checklist</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Filter cleaning and replacement</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Coil cleaning (indoor and outdoor units)</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Refrigerant level check</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Electrical connection inspection</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Drainage system flush</span></li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-warm mt-0.5 flex-shrink-0"></i><span class="text-text-light text-sm">Performance test and efficiency report</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Guide -->
+    <section class="py-16 bg-bg-alt">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-up">
+          <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-4">Pricing Guide</h2>
+          <p class="text-text-light text-lg">Transparent, upfront pricing — no hidden fees</p>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm fade-up">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th class="text-left py-4 px-6 font-semibold">Service</th>
+                <th class="text-right py-4 px-6 font-semibold">Price Guide</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100">
+                <td class="py-4 px-6 font-medium text-text-main">Split System Service</td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $150</td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-bg-main">
+                <td class="py-4 px-6 font-medium text-text-main">Ducted System Service</td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $220</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-4 px-6 font-medium text-text-main">Diagnostic / Fault Finding</td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $120</td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-bg-main">
+                <td class="py-4 px-6 font-medium text-text-main">Split System Supply & Install</td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $1,800</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-4 px-6 font-medium text-text-main">Ducted System Supply & Install</td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $8,500</td>
+              </tr>
+              <tr class="bg-bg-main">
+                <td class="py-4 px-6 font-medium text-text-main flex items-center gap-2">
+                  General Repairs (per hour)
+                </td>
+                <td class="py-4 px-6 text-right font-semibold text-primary">From $110/hr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-text-light text-sm text-center mt-4 italic">Prices are a guide only. Final quote provided on-site before work begins. All installations include our lifetime guarantee.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center fade-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Need a Quote?</h2>
+        <p class="text-white/80 text-lg mb-8">Get in touch for a free, no-obligation quote on any of our services</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0262602044" class="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+            Call (02) 6260 2044
+          </a>
+          <a href="/contact.html" class="bg-white/15 hover:bg-white/25 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            Request a Quote Online
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0F172A] text-[#CBD5E1] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
+              <i data-lucide="thermometer-snowflake" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-lg font-bold text-white">The Climate <span class="text-secondary">Doctor</span></span>
+          </a>
+          <p class="text-sm leading-relaxed">Canberra's trusted air conditioning and heating specialists. Over 20 years of quality service.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li>AC Installation</li>
+            <li>Heating Systems</li>
+            <li>Repairs & Maintenance</li>
+            <li>Commercial HVAC</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-secondary"></i><a href="tel:0262602044" class="hover:text-white transition-colors">(02) 6260 2044</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i><a href="mailto:admin@theclimatedoctor.com.au" class="hover:text-white transition-colors">admin@theclimatedoctor.com.au</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>4/36 Raws Crescent, Hume ACT</li>
+            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-secondary"></i>Mon-Fri 8:00am - 4:30pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#64748B]">
+        <p>&copy; 2026 The Climate Doctor. All rights reserved.</p>
+        <p>Licensed Fujitsu Agent &bull; ARC Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

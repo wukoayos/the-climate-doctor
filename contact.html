@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — The Climate Doctor | Canberra ACT</title>
+  <meta name="description" content="Get in touch with The Climate Doctor for a free quote on air conditioning installation, repairs or maintenance in Canberra. Call (02) 6260 2044.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0C4A6E',
+            'primary-light': '#0369A1',
+            secondary: '#DC2626',
+            'secondary-light': '#EF4444',
+            accent: '#0891B2',
+            warm: '#F97316',
+            'bg-main': '#F8FAFC',
+            'bg-alt': '#F0F9FF',
+            surface: '#FFFFFF',
+            'text-main': '#0F172A',
+            'text-light': '#64748B',
+          },
+          fontFamily: {
+            heading: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0F172A; background-color: #F8FAFC; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-white px-4 py-2 rounded z-50">Skip to content</a>
+
+  <!-- Top Bar -->
+  <div class="bg-primary text-white text-center py-2.5 text-sm font-semibold fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5">
+        <i data-lucide="award" class="w-4 h-4"></i>
+        Licensed Fujitsu Agent &bull; ARC Certified
+      </span>
+      <span class="hidden sm:inline">|</span>
+      <a href="tel:0262602044" class="underline font-bold hover:text-white/90">Call (02) 6260 2044</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed top-[42px] w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 bg-primary rounded-xl flex items-center justify-center group-hover:bg-primary-light transition-colors">
+            <i data-lucide="thermometer-snowflake" class="w-6 h-6 text-white"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold text-primary leading-tight">The Climate <span class="text-secondary">Doctor</span></span>
+            <span class="text-[10px] font-medium text-text-light tracking-wider uppercase leading-tight">Heating & Cooling Specialists</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-text-main font-medium hover:text-primary transition-colors">Home</a>
+          <a href="/services.html" class="text-text-main font-medium hover:text-primary transition-colors">Services</a>
+          <a href="/contact.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0262602044" class="flex items-center gap-2 text-primary font-semibold">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            (02) 6260 2044
+          </a>
+          <a href="/contact.html" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors">Free Quote</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6 text-text-main"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="/" class="block py-2 text-text-main font-medium hover:text-primary">Home</a>
+        <a href="/services.html" class="block py-2 text-text-main font-medium hover:text-primary">Services</a>
+        <a href="/contact.html" class="block py-2 text-primary font-semibold">Contact</a>
+        <a href="tel:0262602044" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">Call (02) 6260 2044</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white pt-40 pb-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Get in Touch</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Ready for a free quote? Have a question? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Call Banner -->
+    <section class="bg-secondary text-white py-6">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+        <div class="flex items-center gap-3">
+          <i data-lucide="phone-call" class="w-6 h-6"></i>
+          <span class="text-lg font-bold">Prefer to talk? Call us now:</span>
+        </div>
+        <a href="tel:0262602044" class="bg-white text-secondary px-6 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+          (02) 6260 2044
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 fade-up">
+
+          <!-- Form -->
+          <div class="lg:col-span-3">
+            <h2 class="text-2xl font-bold text-text-main mb-2">Request a Free Quote</h2>
+            <p class="text-text-light mb-8">Fill in the form below and we'll get back to you within 1 business day.</p>
+            <form class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-text-main mb-1.5">Name *</label>
+                  <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Your full name">
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-text-main mb-1.5">Phone *</label>
+                  <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Your phone number">
+                </div>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-text-main mb-1.5">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="your@email.com">
+              </div>
+              <div>
+                <label for="service" class="block text-sm font-medium text-text-main mb-1.5">Service Required</label>
+                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors text-text-light">
+                  <option value="">Select a service...</option>
+                  <option value="install-residential">Residential AC Installation</option>
+                  <option value="install-commercial">Commercial AC Installation</option>
+                  <option value="repair">Repairs & Diagnostics</option>
+                  <option value="maintenance">Maintenance & Servicing</option>
+                  <option value="heating">Heating System</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div>
+                <label for="suburb" class="block text-sm font-medium text-text-main mb-1.5">Suburb</label>
+                <input type="text" id="suburb" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="e.g. Belconnen, Woden, Tuggeranong">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-text-main mb-1.5">Message</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors resize-y" placeholder="Tell us about your requirements..."></textarea>
+              </div>
+              <button type="submit" class="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors w-full sm:w-auto inline-flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-5 h-5"></i>
+                Send Enquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="lg:col-span-2">
+            <div class="bg-bg-alt rounded-2xl p-8 space-y-6">
+              <h3 class="text-xl font-bold text-text-main">Contact Information</h3>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-text-main">Phone</p>
+                  <a href="tel:0262602044" class="text-primary font-medium hover:underline">(02) 6260 2044</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-text-main">Email</p>
+                  <a href="mailto:admin@theclimatedoctor.com.au" class="text-primary font-medium hover:underline">admin@theclimatedoctor.com.au</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-text-main">Address</p>
+                  <p class="text-text-light">4/36 Raws Crescent<br>Hume ACT 2620</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5 text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-text-main">Hours</p>
+                  <p class="text-text-light">Monday - Friday: 8:00am - 4:30pm</p>
+                  <p class="text-text-light">Saturday - Sunday: Closed</p>
+                </div>
+              </div>
+
+              <hr class="border-gray-200">
+
+              <div>
+                <p class="font-semibold text-text-main mb-3">We Accept</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-white text-text-light px-3 py-1.5 rounded text-xs font-medium border border-gray-200">Visa</span>
+                  <span class="bg-white text-text-light px-3 py-1.5 rounded text-xs font-medium border border-gray-200">MasterCard</span>
+                  <span class="bg-white text-text-light px-3 py-1.5 rounded text-xs font-medium border border-gray-200">EFTPOS</span>
+                  <span class="bg-white text-text-light px-3 py-1.5 rounded text-xs font-medium border border-gray-200">EFT</span>
+                  <span class="bg-white text-text-light px-3 py-1.5 rounded text-xs font-medium border border-gray-200">Cash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="bg-bg-alt">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 fade-up">
+        <div class="rounded-2xl overflow-hidden shadow-sm h-80 bg-gray-200 flex items-center justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.5!2d149.166648!3d-35.393393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164bb3fca92f4d%3A0x8a46f256ed8d7c09!2s4%2F36+Raws+Cres%2C+Hume+ACT+2620!5e0!3m2!1sen!2sau!4v1"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="The Climate Doctor location map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0F172A] text-[#CBD5E1] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
+              <i data-lucide="thermometer-snowflake" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-lg font-bold text-white">The Climate <span class="text-secondary">Doctor</span></span>
+          </a>
+          <p class="text-sm leading-relaxed">Canberra's trusted air conditioning and heating specialists. Over 20 years of quality service.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li>AC Installation</li>
+            <li>Heating Systems</li>
+            <li>Repairs & Maintenance</li>
+            <li>Commercial HVAC</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-secondary"></i><a href="tel:0262602044" class="hover:text-white transition-colors">(02) 6260 2044</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i><a href="mailto:admin@theclimatedoctor.com.au" class="hover:text-white transition-colors">admin@theclimatedoctor.com.au</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>4/36 Raws Crescent, Hume ACT</li>
+            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-secondary"></i>Mon-Fri 8:00am - 4:30pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#64748B]">
+        <p>&copy; 2026 The Climate Doctor. All rights reserved.</p>
+        <p>Licensed Fujitsu Agent &bull; ARC Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
